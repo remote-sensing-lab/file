@@ -13233,7 +13233,7 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">work_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s2">&quot;~&quot;</span><span class="p">),</span> <span class="s1">&#39;lidar&#39;</span><span class="p">)</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">work_dir</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">work_dir</span><span class="p">)</span>
-<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">work_dir</span><span class="p">)</span>
+<span class="c1"># os.chdir(work_dir)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Working directory: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">work_dir</span><span class="p">))</span>
 </pre></div>
 
@@ -13622,7 +13622,7 @@ Data directory: /home/qiusheng/lidar/lidar-dem
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Median filtering ...
-Run time: 0.0202 seconds
+Run time: 0.0190 seconds
 Saving dem ...
 </pre>
 </div>
@@ -13671,7 +13671,7 @@ Computing properties ...
 Saving sink dem ...
 Saving refined dem ...
 Converting raster to vector ...
-Total run time:			 0.0433 s
+Total run time:			 0.1093 s
 
 </pre>
 </div>
@@ -13714,19 +13714,19 @@ Total run time:			 0.0433 s
 <pre>Reading data ...
 rows, cols: (400, 400)
 Pixel resolution: 1.0
-Read data time: 0.0025 seconds
-Data preparation time: 0.0086 seconds
+Read data time: 0.0024 seconds
+Data preparation time: 0.0100 seconds
 Total number of regions: 1
 Processing Region # 1 ...
 =========== Run time statistics =========== 
 (rows, cols):			 (400, 400)
 Pixel resolution:		 1.0 m
 Number of regions:		 1
-Data preparation time:		 0.0086 s
-Identify level time:		 0.3032 s
-Write image time:		 0.0031 s
-Polygonize time:		 0.0082 s
-Total run time:			 0.3239 s
+Data preparation time:		 0.0100 s
+Identify level time:		 0.3347 s
+Write image time:		 0.0164 s
+Polygonize time:		 0.0098 s
+Total run time:			 0.3719 s
 </pre>
 </div>
 </div>
@@ -13766,8 +13766,8 @@ Total run time:			 0.3239 s
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Results are saved in: /home/qiusheng/lidar/temp
-[&#39;median.tif&#39;, &#39;sink.tif&#39;, &#39;depression_id.tif&#39;, &#39;regions.dbf&#39;, &#39;dem_filled.tif&#39;, &#39;region.tif&#39;, &#39;regions.shx&#39;, &#39;depression_level.tif&#39;, &#39;depressions_info.csv&#39;, &#39;depressions.shp&#39;, &#39;dem_diff.tif&#39;, &#39;regions.shp&#39;, &#39;depressions.dbf&#39;, &#39;dem.tif&#39;, &#39;depth.tif&#39;, &#39;depressions.shx&#39;, &#39;regions.prj&#39;, &#39;depressions.prj&#39;, &#39;regions_info.csv&#39;]
+<pre>Results are saved in: /media/hdd/Dropbox/git/lidar/examples/temp
+[&#39;depressions.dbf&#39;, &#39;depressions.prj&#39;, &#39;regions_info.csv&#39;, &#39;regions.shp&#39;, &#39;region.tif&#39;, &#39;depression_level.tif&#39;, &#39;depressions.shx&#39;, &#39;depression_id.tif&#39;, &#39;depressions_info.csv&#39;, &#39;depth.tif&#39;, &#39;depressions.shp&#39;, &#39;median.tif&#39;, &#39;dem_diff.tif&#39;, &#39;regions.shx&#39;, &#39;sink.tif&#39;, &#39;dem_filled.tif&#39;, &#39;dem.tif&#39;, &#39;regions.dbf&#39;, &#39;regions.prj&#39;]
 </pre>
 </div>
 </div>
